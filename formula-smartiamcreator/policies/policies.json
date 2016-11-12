@@ -1,0 +1,23 @@
+{
+  "All_All_PowerUser": {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllPowerUser",
+            "Effect": "Allow",
+            "NotAction": "iam:*",
+            "Resource": "*"
+        }
+    ]
+  },
+  "All_IAM_Admin": {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*"
+        }
+    ]
+  }
+}
