@@ -3,7 +3,7 @@ require 'formula'
 class IAMCredentialsCreator < Formula
   homepage 'https://github.com/smartcundo/smartiamcreator'
   url 'https://github.com/smartcundo/smartiamcreator/archive/0.0.1.tar.gz'
-  sha1 '0a25f5a5e14ff373345789a1653382f02f437ae0'
+  sha256 '232fa18d7a92d95bc32161de3c2e9c9fc131cb8b6a28d55ccaff3029d24170f0'
 
   def install
     bin.install "create_iam_accounts.py"
