@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+HOMEBREWBASE=/usr/local/Cellar
+REPO_NAME=smartiamcreator
+VERSION=0.0.2
+CMD=create_iam_accounts
+
+python $HOMEBREWBASE/$REPO_NAME/$VERSION/bin/$CMD
+
