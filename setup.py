@@ -28,6 +28,11 @@ setup_options = dict(
     author_email='fnishiwaki@smarttech.com',
     url='https://github.com/smartcundo/smartiamcreator',
     scripts=['create_iam_accounts.py'],
+    entry_points={
+        'console_scripts': [
+            'smart-iam = create_iam_accounts:main',
+        ]
+    },
     packages=find_packages('.', exclude=['tests*']),
     package_dir={'smartiamcreator': '.'},
     package_data={'smartiamcreator': []},
