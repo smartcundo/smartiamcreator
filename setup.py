@@ -3,7 +3,7 @@ import sys
 
 from setuptools import setup, find_packages
 
-import smartiamcreator
+import create_iam_accounts
 
 
 requires = ['botocore>=0.38.0,<0.39.0',
@@ -29,7 +29,7 @@ setup_options = dict(
     url='https://github.com/smartcundo/smartiamcreator',
     scripts=['create_iam_accounts.py'],
     packages=find_packages('.', exclude=['tests*']),
-    package_dir={'smartiamcreator': 'smartiamcreator'},
+    package_dir={'smartiamcreator': '.'},
     package_data={'smartiamcreator': []},
     install_requires=requires,
     license="Apache License 2.0",
@@ -56,7 +56,7 @@ if 'py2exe' in sys.argv:
             'optimize': 0,
             'skip_archive': True,
             'packages': ['docutils', 'urllib', 'httplib', 'HTMLParser',
-                         'smartiamcreator', 'ConfigParser', 'xml.etree'],
+                         'create_iam_accounts', 'ConfigParser', 'xml.etree'],
         }
     }
     setup_options['console'] = ['.']
