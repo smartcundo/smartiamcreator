@@ -7,11 +7,7 @@ from setuptools import setup, find_packages
 
 requires = ['botocore>=0.38.0,<0.39.0',
             'bcdoc>=0.12.0,<0.13.0',
-            'boto3>=1.4.1',
-            'six>=1.1.0',
-            'colorama==0.2.5',
-            'docutils>=0.10',
-            'rsa==3.1.2']
+            'boto3>=1.4.1']
 
 if sys.version_info[:2] == (2, 6):
     # For python2.6 we have to require argparse since it
