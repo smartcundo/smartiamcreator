@@ -22,13 +22,12 @@ if sys.version_info[:2] == (2, 6):
 setup_options = dict(
     name='smartiamcreator',
     version=smartiamcreator.__version__,
-    description='Universal Command Line Environment for AWS.',
+    description='Universal Command Line Environment for creating IAM accounts in AWS.',
     long_description=open('README.rst').read(),
     author='Mitch Garnaat',
-    author_email='garnaat@amazon.com',
-    url='http://aws.amazon.com/cli/',
-    scripts=['bin/aws', 'bin/aws.cmd',
-             'bin/aws_completer', 'bin/aws_zsh_completer.sh'],
+    author_email='fnishiwaki@smarttech.com',
+    url='https://github.com/smartcundo/smartiamcreator',
+    scripts=['create_iam_accounts.py'],
     packages=find_packages('.', exclude=['tests*']),
     package_dir={'smartiamcreator': 'smartiamcreator'},
     package_data={'smartiamcreator': []},
@@ -60,7 +59,7 @@ if 'py2exe' in sys.argv:
                          'smartiamcreator', 'ConfigParser', 'xml.etree'],
         }
     }
-    setup_options['console'] = ['bin/aws']
+    setup_options['console'] = ['.']
 
 
 setup(**setup_options)
