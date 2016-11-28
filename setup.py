@@ -3,11 +3,11 @@ import sys
 
 from setuptools import setup, find_packages
 
-import create_iam_accounts
 
 
 requires = ['botocore>=0.38.0,<0.39.0',
             'bcdoc>=0.12.0,<0.13.0',
+            'boto3>=1.4.1',
             'six>=1.1.0',
             'colorama==0.2.5',
             'docutils>=0.10',
@@ -21,10 +21,10 @@ if sys.version_info[:2] == (2, 6):
 
 setup_options = dict(
     name='smartiamcreator',
-    version=smartiamcreator.__version__,
-    description='Universal Command Line Environment for creating IAM accounts in AWS.',
-    long_description=open('README.rst').read(),
-    author='Mitch Garnaat',
+    #version=smartiamcreator.__version__,
+    description='Command Line for creating IAM accounts in AWS.',
+    #long_description=open('README.rst').read(),
+    author='Facundo',
     author_email='fnishiwaki@smarttech.com',
     url='https://github.com/smartcundo/smartiamcreator',
     scripts=['create_iam_accounts.py'],
@@ -63,3 +63,4 @@ if 'py2exe' in sys.argv:
 
 
 setup(**setup_options)
+
